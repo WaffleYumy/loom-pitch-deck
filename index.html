@@ -548,32 +548,7 @@ svg.arch-wires .dash { stroke-dasharray: 4 4; }
     <img class="hero-mark" src="assets/deck-mark.png?v=2" alt="">
   </section>
 
-  <!-- 02 Agenda -->
-  <section class="slide s-agenda" data-section="Agenda" aria-label="Agenda">
-    <div data-stagger>
-      <span class="kicker"><i></i>Agenda</span>
-      <h2 class="title" style="margin-top:28px">What we'll cover</h2>
-    </div>
-    <ol class="agenda" data-stagger>
-      <li><span>01</span>The problem<span>2 min</span></li>
-      <li><span>02</span>How Loom AI works<span>3 min</span></li>
-      <li><span>03</span>Live demo<span>3 min</span></li>
-      <li><span>04</span>Security and the gateway<span>2 min</span></li>
-      <li><span>05</span>What's next<span>1 min</span></li>
-    </ol>
-  </section>
-
-  <!-- 03 Section divider -->
-  <section class="slide s-divider" data-section="The problem" aria-label="Section: The problem">
-    <div class="num-panel"><small>Section</small><span>01</span></div>
-    <div class="txt" data-stagger>
-      <span class="kicker"><i></i>Part one</span>
-      <h2 class="title">The problem</h2>
-      <p class="lead">One short line that frames this section before you dive in.</p>
-    </div>
-  </section>
-
-  <!-- 04 The problem, drawn out -->
+  <!-- 02 The problem, drawn out -->
   <section class="slide s-problem" data-section="The problem" aria-label="The problem: we shared context by emailing Markdown files back and forth">
     <div>
       <span class="kicker"><i></i>The problem</span>
@@ -590,259 +565,7 @@ svg.arch-wires .dash { stroke-dasharray: 4 4; }
     <svg class="callout-lines" aria-hidden="true"></svg>
   </section>
 
-  <!-- 05 Four-up -->
-  <section class="slide s-four" data-section="The problem" aria-label="Four points">
-    <div>
-      <span class="kicker"><i></i>What breaks</span>
-      <h2 class="title" style="margin-top:24px">Four things go wrong</h2>
-    </div>
-    <div class="four" data-stagger>
-      <article><span class="n">01</span><h3>Every session starts from zero</h3><p>You re-explain the project, the decisions and the conventions. Every time.</p></article>
-      <article><span class="n">02</span><h3>Agents can't see each other</h3><p>One agent doesn't know another just changed the API. You become the messenger.</p></article>
-      <article><span class="n">03</span><h3>Decisions get lost</h3><p>They live in dozens of chat sessions you'll never find again.</p></article>
-      <article><span class="n">04</span><h3>Nobody's watching</h3><p>Nothing stops an agent from pasting your <span class="code">.env</span> into a prompt or sending it to someone.</p></article>
-    </div>
-  </section>
-
-  <!-- 06 Diagram -->
-  <section class="slide s-diagram" data-section="How it works" aria-label="How it works diagram">
-    <div>
-      <span class="kicker"><i></i>How it works</span>
-      <div class="chat" role="img" aria-label="Chat: I ask my AI to build our landing page; it asks Loom and gets our brand guide, mission and design decisions from four sources. I ask it to save the new blue for the team; it saves a note to the website project. An intern's agent tries to save a note and is denied because viewers cannot add knowledge.">
-        <div class="chat-head" aria-hidden="true"><span class="ava">Y</span>Your AI <span class="conn"><i></i>connected to Loom</span></div>
-        <div class="chat-body" data-stagger aria-hidden="true">
-          <div class="msg you">Build our company's landing page.</div>
-          <div class="msg ai">
-            <span class="loom ok">loom.ask_project &middot; brand guide, mission, decisions &middot; 4 sources</span>
-            Got it. Drafting the page with your branding and copy…
-          </div>
-          <div class="msg you">Actually, I don't like that blue. Save the new one for the team.</div>
-          <div class="msg ai">
-            <span class="loom ok">loom.save_note &middot; &ldquo;brand blue is #2A45E8&rdquo; &middot; saved to website</span>
-            Done. Every teammate&rsquo;s agent can find the new blue now.
-          </div>
-          <div class="msg sys"><span class="loom no"><svg viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="6.25" stroke="currentColor" stroke-width="1.4"/><path d="m5.8 5.8 4.4 4.4m0-4.4-4.4 4.4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>Intern&rsquo;s agent &middot; save_note &middot; denied: role &lsquo;viewer&rsquo; cannot add knowledge</span></div>
-        </div>
-      </div>
-    </div>
-    <figure class="wf-fig" id="wf-fig" role="img" aria-label="Dan's Claude Code, Sara's Claude app and Priya's Cursor agents each pass through their own gateway before reaching the Loom AI hub. The hub writes pushes into the project brain's projects, conversations, files and summaries, and returns information to agents that pull it.">
-      <div class="wf-ticks" aria-hidden="true"></div>
-      <svg class="wf-wires" id="wf-wires" aria-hidden="true"></svg>
-  
-      <div class="wf-n wf-agent" id="wf-a0" style="left:20%;top:10%" aria-hidden="true"><div class="wf-tile"><svg><use href="#wf-person"/></svg></div><span>Dan <i>(Claude Code)</i></span></div>
-      <div class="wf-n wf-agent" id="wf-a1" style="left:50%;top:10%" aria-hidden="true"><div class="wf-tile"><svg><use href="#wf-person"/></svg></div><span>Sara <i>(Claude app)</i></span></div>
-      <div class="wf-n wf-agent" id="wf-a2" style="left:80%;top:10%" aria-hidden="true"><div class="wf-tile"><svg><use href="#wf-person"/></svg></div><span>Priya <i>(Cursor)</i></span></div>
-  
-      <span class="wf-gate-label" style="top:29%" aria-hidden="true">Gateway</span>
-      <div class="wf-n wf-gate" id="wf-g0" style="left:20%;top:29%" aria-hidden="true"><div class="wf-tile"><svg><use href="#wf-shield"/></svg></div></div>
-      <div class="wf-n wf-gate" id="wf-g1" style="left:50%;top:29%" aria-hidden="true"><div class="wf-tile"><svg><use href="#wf-shield"/></svg></div></div>
-      <div class="wf-n wf-gate" id="wf-g2" style="left:80%;top:29%" aria-hidden="true"><div class="wf-tile"><svg><use href="#wf-shield"/></svg></div></div>
-  
-      <div class="wf-n wf-hub" id="wf-hub" style="left:50%;top:48%" aria-hidden="true"><div class="wf-tile"><img class="mark" src="assets/deck-mark.png?v=2" alt="" width="34" height="34"></div><span>Loom AI</span></div>
-      <span class="wf-caption" id="wf-cap" aria-hidden="true">processing</span>
-  
-      <div class="wf-n wf-brain" id="wf-db" style="left:50%;top:70%" aria-hidden="true">
-        <div class="wf-tile"><svg viewBox="0 0 22 22" fill="none"><ellipse cx="11" cy="5.5" rx="7" ry="2.5" stroke="currentColor" stroke-width="1.4"/><path d="M4 5.5v11c0 1.4 3.1 2.5 7 2.5s7-1.1 7-2.5v-11M4 11c0 1.4 3.1 2.5 7 2.5s7-1.1 7-2.5" stroke="currentColor" stroke-width="1.4"/></svg></div>
-        <span>Project brain</span>
-      </div>
-  
-      <div class="wf-sec" id="wf-s0" style="left:17%;top:90%" aria-hidden="true"><div class="wf-tile"><svg viewBox="0 0 16 16" fill="none"><path d="M2.5 4.5h4l1.2 1.5h5.8v6.5h-11Z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/></svg></div><span>projects</span></div>
-      <div class="wf-sec" id="wf-s1" style="left:39%;top:90%" aria-hidden="true"><div class="wf-tile"><svg viewBox="0 0 16 16" fill="none"><path d="M3 3.5h10v7H7l-3 2.5v-2.5H3Z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/></svg></div><span>convos</span></div>
-      <div class="wf-sec" id="wf-s2" style="left:61%;top:90%" aria-hidden="true"><div class="wf-tile"><svg viewBox="0 0 16 16" fill="none"><path d="M4 2.5h5l3 3v8H4Z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/><path d="M9 2.5v3h3" stroke="currentColor" stroke-width="1.3"/></svg></div><span>files</span></div>
-      <div class="wf-sec" id="wf-s3" style="left:83%;top:90%" aria-hidden="true"><div class="wf-tile"><svg viewBox="0 0 16 16" fill="none"><path d="M3.5 4.5h9M3.5 8h9M3.5 11.5h5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg></div><span>summaries</span></div>
-  
-      <button class="wf-pause" id="wf-pause" type="button" aria-label="Pause animation" aria-pressed="false">
-        <svg viewBox="0 0 12 12" aria-hidden="true"><path d="M3.5 2.5v7M8.5 2.5v7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
-      </button>
-    </figure>
-    <svg class="callout-lines" aria-hidden="true"></svg>
-  </section>
-
-  <!-- 07 Demo -->
-  <section class="slide s-demo2" data-section="Live demo" aria-label="Demo: a Claude Code session with Loom connected">
-    <div>
-      <span class="kicker"><i></i>Live demo</span>
-      <h2 class="title" style="margin-top:20px;font-size:72px">It already knows. It won&rsquo;t leak a secret.</h2>
-    </div>
-    <div class="term" style="position:absolute;left:112px;top:256px;width:930px" role="img" aria-label="Terminal: Claude Code starts with Loom connected and finds a new skill from Bob in its inbox, asks Loom and gets answers citing file paths and line numbers, is stopped on the laptop when asked to send the .env file to Bob, and saves a note every teammate's agent can find.">
-      <div class="term-bar"><span class="dots"><i></i><i></i><i></i></span><span>alice@mbp &mdash; ~/hackathon-site &mdash; claude</span></div>
-      <div class="term-body" aria-hidden="true">
-        <div><span class="cb">~/hackathon-site</span> <span class="c3">$</span> <span class="c1">claude</span></div>
-        <div id="t-brief"><span class="hm">loom</span> MCP connected &middot; <span class="c1">check_inbox</span> &middot; 1 new skill from bob</div>
-        <div><span class="c3">&gt;</span> <span class="c1">Fix the 429 handling in the API.</span></div>
-        <div id="t-ask"><span class="c3">&#9679;</span> loom.<span class="c1">ask_project</span>(<span class="cs">"how do we retry rate limits?"</span>)</div>
-        <div class="c3" style="padding-left:20px">&#8627; [S1] <span class="cb">src/api/client.ts:41-88</span> &middot; [S2] <span class="cb">notes/decisions.md:12</span></div>
-        <div><span class="c3">&gt;</span> <span class="c1">Send my .env to Bob so he can test.</span></div>
-        <div id="t-block"><span class="blk"><b>Blocked on this laptop</b> &middot; send_to_teammate(.env) &middot; audited<br>Credential files (.env, keys, certificates) can never be sent.</span></div>
-        <div><span class="c3">&gt;</span> <span class="c1">Remember: we retry 429s with backoff.</span></div>
-        <div id="t-push"><span class="okb">save_note &rarr; saved to hackathon-site &middot; every teammate&rsquo;s agent can find it</span></div>
-      </div>
-    </div>
-    <div class="co" data-for="#t-brief" style="left:1110px;top:300px;width:378px;--c:0"><span class="n">1</span><span><b>Already connected</b>It checks the inbox for what teammates sent.</span></div>
-    <div class="co" data-for="#t-ask" style="left:1110px;top:430px;width:378px;--c:1"><span class="n">2</span><span><b>Answers with sources</b>Every answer points to the exact file and lines.</span></div>
-    <div class="co" data-for="#t-block .blk" style="left:1110px;top:560px;width:378px;--c:2"><span class="n">3</span><span><b>Stopped before it leaves</b>Secrets are blocked on the laptop, and the try is logged.</span></div>
-    <div class="co" data-for="#t-push .okb" style="left:1110px;top:690px;width:378px;--c:3"><span class="n">4</span><span><b>The whole team knows</b>One note, and every teammate&rsquo;s agent can find it.</span></div>
-    <svg class="callout-lines" aria-hidden="true"></svg>
-  </section>
-
-  <!-- 08 Big numbers -->
-  <section class="slide s-numbers" data-section="Built in" aria-label="By the numbers">
-    <div>
-      <span class="kicker"><i></i>Built in</span>
-      <h2 class="title" style="margin-top:24px">By the numbers</h2>
-    </div>
-    <div class="nums" data-stagger>
-      <article class="card blue"><span class="lbl">Answers</span><span class="big">5</span><h3>best sources out of 20, reranked for every answer</h3><p>Cited by file and line, or &ldquo;Not in project knowledge.&rdquo;</p></article>
-      <article class="card"><span class="lbl">Secrets</span><span class="big">3</span><h3>places secrets get caught</h3><p>On the laptop, on the server, and in an optional Bedrock Guardrail.</p></article>
-      <article class="card"><span class="lbl">Setup</span><span class="big">1</span><h3>line to join a team</h3><p>It connects Cursor, Claude Code and the Claude app it finds.</p></article>
-    </div>
-  </section>
-
-  <!-- 09 The real system layout -->
-  <section class="slide s-arch" data-section="How it works" aria-label="System layout. Each agent talks MCP to the local loom command, which calls the gateway on AWS over HTTPS with a device token. The gateway checks identity, role and secrets and logs every call. The Conductor searches project knowledge and answers with Claude on Amazon Bedrock. The project brain is Postgres with pgvector plus S3: team and access tables, knowledge tables, sharing tables and the audit log.">
-    <div>
-      <span class="kicker"><i></i>Under the hood</span>
-      <h2 class="title" style="margin-top:18px;font-size:60px">Memory, a curator, a gatekeeper</h2>
-    </div>
-    <svg class="arch-wires" aria-hidden="true">
-      <path d="M382 324 C 440 324, 440 400, 500 400"/>
-      <path d="M382 400 L 500 400"/>
-      <path d="M382 476 C 440 476, 440 400, 500 400"/>
-      <path class="hot" d="M800 400 L 840 400"/>
-      <path class="hot" d="M1160 388 L 1200 388"/>
-      <path class="hot" d="M1200 412 L 1160 412"/>
-      <path class="hot dash" d="M1339 520 L 1339 546"/>
-    </svg>
-    <div class="lap" style="top:292px"><svg viewBox="0 0 24 24" fill="none"><rect x="4" y="5" width="16" height="11" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M2 19h20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg><span>Alex<small>Claude Code</small></span></div>
-    <div class="lap" style="top:368px"><svg viewBox="0 0 24 24" fill="none"><rect x="4" y="5" width="16" height="11" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M2 19h20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg><span>Sam<small>Claude app</small></span></div>
-    <div class="lap" style="top:444px"><svg viewBox="0 0 24 24" fill="none"><rect x="4" y="5" width="16" height="11" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M2 19h20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg><span>You<small>Cursor</small></span></div>
-    <span class="wire-tag" style="left:394px;top:392px">HTTPS<br>+ token</span>
-    <div class="lap-notes">
-      <p><b>On each laptop</b>The <code>loom</code> command talks to the agent over MCP and blocks secrets before anything leaves.</p>
-      <p><b>Back to the laptop</b>A live WebSocket brings inbox items, skill installs and the audit feed.</p>
-    </div>
-    <div class="aws"><span>AWS</span><code class="edge">CloudFront &rarr; load balancer &rarr; EC2 &middot; private network</code></div>
-    <div class="arch-box" id="a-gw" style="left:500px;top:280px;width:300px">
-      <span class="role">Gatekeeper</span>
-      <h3><span class="ic"><svg viewBox="0 0 16 16" fill="none"><path d="M8 1.8 13 3.8v3.8c0 3.1-2.1 5.3-5 6.6-2.9-1.3-5-3.5-5-6.6V3.8Z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg></span>Gateway</h3>
-      <div class="rows"><div><span class="k">who</span><span>one token per computer</span></div><div><span class="k">access</span><span>owner / member / viewer</span></div><div><span class="k">secrets</span><span>scanned again here</span></div><div><span class="k">log</span><span>every call, with timing</span></div></div>
-    </div>
-    <div class="arch-box hub" id="a-ov" style="left:840px;top:280px;width:320px">
-      <span class="role">Curator</span>
-      <h3><span class="ic"><img class="dmark" src="assets/deck-mark.png?v=2" alt=""></span>Conductor</h3>
-      <div class="rows"><div><span class="k">search</span><span>by meaning + keywords</span></div><div><span class="k">rank</span><span>best 5 of 20 passages</span></div><div><span class="k">answer</span><span>Claude, cites <code>file:lines</code></span></div><div><span class="k">brief</span><span>writes each project summary</span></div></div>
-    </div>
-    <div class="arch-box" id="a-br" style="left:1200px;top:280px;width:278px">
-      <span class="role">Memory</span>
-      <h3><span class="ic"><svg viewBox="0 0 22 22" fill="none"><ellipse cx="11" cy="5.5" rx="7" ry="2.5" stroke="currentColor" stroke-width="1.4"/><path d="M4 5.5v11c0 1.4 3.1 2.5 7 2.5s7-1.1 7-2.5v-11M4 11c0 1.4 3.1 2.5 7 2.5s7-1.1 7-2.5" stroke="currentColor" stroke-width="1.4"/></svg></span>Project brain</h3>
-      <div class="rows"><div><span class="k">rows</span><span>Postgres, 12 tables</span></div><div><span class="k">vectors</span><span>pgvector, 1024-d</span></div><div><span class="k">files</span><span>S3, encrypted</span></div><div><span class="k">access</span><span>gateway only</span></div></div>
-    </div>
-    <div class="dbpanel" id="a-db">
-      <div class="dbh"><b>Inside the project brain</b><span>Postgres keeps the rows and the search index. File contents live in S3.</span></div>
-      <div class="dbcols">
-        <div class="dbg"><h4>Team and access</h4><p class="by">Checked by the gateway</p><ul><li><code>workspaces</code><span>your team</span></li><li><code>users</code><span>name, email, admin</span></li><li><code>memberships</code><span>role per project</span></li><li><code>devices</code><span>a token per computer</span></li><li><code>invites</code><span>team links</span></li></ul></div>
-        <div class="dbg"><h4>Knowledge</h4><p class="by">Searched by the Conductor</p><ul><li><code>projects</code><span>name + summary</span></li><li><code>documents</code><span>every file and note</span></li><li><code>chunks</code><span>passage + vector + lines</span></li><li><code>conversation_turns</code><span>follow-ups</span></li></ul></div>
-        <div class="dbg"><h4>Sharing</h4><p class="by">Run by the gateway</p><ul><li><code>artifacts</code><span>file, skill, message</span></li><li><code>deliveries</code><span>inbox status</span></li></ul></div>
-        <div class="dbg"><h4>Record</h4><p class="by">Written on every call</p><ul><li><code>audit_events</code><span>who, what, result, ms</span></li></ul></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- 10 Dashboard -->
-  <section class="slide s-dash" data-section="Visibility" aria-label="Dashboard: the ledger shows every request with its decision and timing, and teammates' agents share files, skills and messages through the inbox">
-    <div>
-      <span class="kicker"><i></i>One dashboard</span>
-      <h2 class="title" style="margin-top:20px;font-size:72px">Every request and message, logged</h2>
-    </div>
-    <div class="dash" aria-hidden="true">
-      <div class="side"><div class="ws"><img class="dmark" src="assets/deck-mark.png?v=2" alt="">hackathon-site</div><span>Overview</span><span class="on">Ledger</span><span>Team</span><span>Projects</span><span>Inbox</span></div>
-      <div>
-        <div class="main-h">Gateway log <small>audit_events &middot; live over WebSocket</small></div>
-        <table class="log">
-          <thead id="d-head"><tr><th>Time</th><th>Agent</th><th>Action</th><th>Decision</th><th class="ms">ms</th></tr></thead>
-          <tbody>
-            <tr><td class="t">14:02:11</td><td class="w">Sara<small>claude-app &middot; sara-mbp</small></td><td><code>ask_project &middot; 2 sources</code></td><td><span class="st ok"><i></i>allow</span></td><td class="ms">184</td></tr>
-            <tr id="d-deny"><td class="t">14:01:58</td><td class="w">Intern<small>claude-code &middot; lab-03</small></td><td><code>save_note &middot; website</code><span class="why">Role &lsquo;viewer&rsquo; cannot add knowledge</span></td><td><span class="st no"><i></i>deny</span></td><td class="ms">6</td></tr>
-            <tr><td class="t">14:01:44</td><td class="w">You<small>cursor &middot; you-mbp</small></td><td><code>send_to_teammate &middot; .env</code><span class="why">Credential files can never be sent</span></td><td><span class="st no"><i></i>deny</span></td><td class="ms">3</td></tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-    <div class="thread" aria-hidden="true">
-      <div class="thread-h">Inbox <span>deliveries</span></div>
-      <div class="tmsgs">
-        <div class="tm" id="d-msg"><span class="a"><svg viewBox="0 0 16 16" fill="none"><circle cx="8" cy="5.6" r="2.6" stroke="currentColor" stroke-width="1.3"/><path d="M3 13.5c.6-2.6 2.6-4 5-4s4.4 1.4 5 4" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg></span><div><b>Priya&rsquo;s AI<small>Cursor</small></b><p>Sent Sara a skill: deploy-checklist.</p></div></div>
-        <div class="tm"><span class="a"><svg viewBox="0 0 16 16" fill="none"><circle cx="8" cy="5.6" r="2.6" stroke="currentColor" stroke-width="1.3"/><path d="M3 13.5c.6-2.6 2.6-4 5-4s4.4 1.4 5 4" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg></span><div><b>Sara&rsquo;s AI<small>Claude Code</small></b><p>Accepted &middot; installed in Claude Code.</p></div></div>
-        <div class="tm" id="d-ov"><span class="a"><img class="dmark" src="assets/deck-mark.png?v=2" alt=""></span><div><b>Conductor</b><p>Project brief rebuilt after the new ingest.</p></div></div>
-      </div>
-    </div>
-    <div class="co" data-for="#d-head" style="left:1260px;top:250px;width:228px;--c:0"><span class="n">1</span><span><b>Every call, timed</b>Per device, per agent, with timing.</span></div>
-    <div class="co" data-for="#d-deny .why" style="left:1260px;top:400px;width:228px;--c:1"><span class="n">2</span><span><b>Denied, with the rule</b>The exact reason, every time.</span></div>
-    <div class="co" data-for="#d-msg" style="left:1260px;top:560px;width:228px;--c:2"><span class="n">3</span><span><b>Agents share</b>Files, skills and messages, through Loom.</span></div>
-    <div class="co" data-for="#d-ov" style="left:1260px;top:710px;width:228px;--c:3"><span class="n">4</span><span><b>Conductor keeps the brief</b>Rewritten when the project changes.</span></div>
-    <svg class="callout-lines" aria-hidden="true"></svg>
-  </section>
-
-  <!-- 11 Roadmap -->
-  <section class="slide s-roadmap" data-section="What's next" aria-label="Roadmap">
-    <div>
-      <span class="kicker"><i></i>Roadmap</span>
-      <h2 class="title" style="margin-top:24px">Where this goes next</h2>
-    </div>
-    <div class="road" data-stagger>
-      <div class="step now"><span class="when">Now</span><h3>Milestone title</h3><p>One or two lines on what ships at this stage.</p></div>
-      <div class="step"><span class="when">Next</span><h3>Milestone title</h3><p>One or two lines on what ships at this stage.</p></div>
-      <div class="step"><span class="when">Later</span><h3>Milestone title</h3><p>One or two lines on what ships at this stage.</p></div>
-      <div class="step"><span class="when">Someday</span><h3>Milestone title</h3><p>One or two lines on what ships at this stage.</p></div>
-    </div>
-  </section>
-
-  <!-- 12 Quote -->
-  <section class="slide s-quote" data-section="Feedback" aria-label="Quote">
-    <p class="quote">A short quote goes here. Keep it to two lines at most.</p>
-    <div class="who">
-      <span class="av"><svg viewBox="0 0 16 16" fill="none"><circle cx="8" cy="5.6" r="2.6" stroke="currentColor" stroke-width="1.3"/><path d="M3 13.5c.6-2.6 2.6-4 5-4s4.4 1.4 5 4" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg></span>
-      <div><b>Person's name</b><span>Role · Company</span></div>
-    </div>
-  </section>
-
-  <!-- 13 Install -->
-  <section class="slide s-install" data-section="Get started" aria-label="Install">
-    <div class="tile" aria-hidden="true"><img src="assets/deck-mark.png?v=2" alt=""></div>
-    <h2 class="title">Join in one line</h2>
-    <p class="lead" style="max-width:none;font-size:24px">One line installs Loom and connects every AI app it finds.</p>
-    <div class="editor">
-      <div class="term-bar"><span class="dots"><i></i><i></i><i></i></span><span>terminal</span></div>
-      <pre><span class="g">1
-2
-3
-4
-5</span><code><span class="cm"># Start a team, then add your project</span>
-curl -fsSL <span class="s">https://&lt;your-loom-host&gt;/install.sh</span> | sh
-<span class="k">loom</span> project create <span class="s">"My App"</span>
-<span class="k">loom</span> ingest .
-<span class="k">loom</span> invite -p my-app</code></pre>
-    </div>
-  </section>
-
-  <!-- 14 Closing -->
-  <section class="slide s-close bare-chrome" data-section="Thanks" aria-label="Closing: Loom is AI memory for teams of agents. Easy to use, self-updating, self-regulating. Works with Claude Code, Codex, Cursor and the Claude app.">
-    <div class="left" data-stagger>
-      <img class="logo-full" src="assets/deck-logo-full.png?v=1" alt="Loom AI">
-      <div>
-        <h2 class="title-lg" style="font-size:96px">AI memory for teams of agents</h2>
-        <p class="traits">Easy to use<i></i>Self-updating<i></i>Self-regulating</p>
-        <div class="works"><span>Works with</span><b>Claude Code</b><b>Codex</b><b>Cursor</b><b>Claude app</b></div>
-      </div>
-      <div class="contact">
-        <div><span>Code</span>github.com/versean/LoomAI</div>
-        <div><span>Thanks</span>Questions?</div>
-      </div>
-    </div>
-    <div class="right"><img src="assets/deck-mark.png?v=2" alt=""></div>
-  </section>
-
-  <!-- 15 Logo -->
+  <!-- 03 Logo -->
   <section class="slide s-logo bare-chrome" data-section="Loom" aria-label="Loom AI">
     <div data-stagger>
       <img class="logo-big" src="assets/deck-logo-full.png?v=1" alt="Loom AI">
@@ -850,7 +573,7 @@ curl -fsSL <span class="s">https://&lt;your-loom-host&gt;/install.sh</span> | sh
     </div>
   </section>
 
-  <!-- 16 Sending context -->
+  <!-- 04 Sending context -->
   <section class="slide s-flow" data-section="How it works" aria-label="While you chat, your AI sends what you're working on to Loom. The Conductor organizes it into the project's brain.">
     <div>
       <span class="kicker"><i></i>How it works</span>
@@ -887,7 +610,7 @@ curl -fsSL <span class="s">https://&lt;your-loom-host&gt;/install.sh</span> | sh
     </figure>
   </section>
 
-  <!-- 17 Asking for context -->
+  <!-- 05 Asking for context -->
   <section class="slide s-flow flip" data-section="How it works" aria-label="Any agent can ask Loom for context. The gateway checks its permission first, then the Conductor finds the answer and sends it back. Agents can also message each other through Loom.">
     <figure class="wf-fig flow" data-mode="pull" aria-hidden="true">
       <div class="wf-ticks" aria-hidden="true"></div>
@@ -937,7 +660,7 @@ curl -fsSL <span class="s">https://&lt;your-loom-host&gt;/install.sh</span> | sh
     </div>
   </section>
 
-  <!-- 18 GitHub vs Loom -->
+  <!-- 06 GitHub vs Loom -->
   <section class="slide s-vs" data-section="Why not GitHub" aria-label="GitHub compared with Loom">
     <div>
       <span class="kicker"><i></i>Why not GitHub?</span>
@@ -953,7 +676,7 @@ curl -fsSL <span class="s">https://&lt;your-loom-host&gt;/install.sh</span> | sh
     </div>
   </section>
 
-  <!-- 19 Example: receiving -->
+  <!-- 07 Example: receiving -->
   <section class="slide s-flow" data-section="Example" aria-label="Example: you ask your AI to build the landing page. It gets the brand guide, mission and design decisions from Loom.">
     <div>
       <span class="kicker"><i></i>Example</span>
@@ -990,7 +713,7 @@ curl -fsSL <span class="s">https://&lt;your-loom-host&gt;/install.sh</span> | sh
     </figure>
   </section>
 
-  <!-- 20 Example: sending -->
+  <!-- 08 Example: sending -->
   <section class="slide s-flow" data-section="Example" aria-label="Example: you ask your AI to change the blue in the style guide. It has permission, so the update is saved to Loom for everyone.">
     <div>
       <span class="kicker"><i></i>Example</span>
@@ -1027,7 +750,7 @@ curl -fsSL <span class="s">https://&lt;your-loom-host&gt;/install.sh</span> | sh
     </figure>
   </section>
 
-  <!-- 21 Backups -->
+  <!-- 09 Backups -->
   <section class="slide s-backup" data-section="Backups" aria-label="The Conductor sits above today's live project brain and can read and write it. Below are six older daily snapshots taken automatically by AWS; red lines show the Conductor is blocked from changing or deleting any of them. Restore any of the last 7 days.">
     <div>
       <span class="kicker"><i></i>Safety</span>
@@ -1044,6 +767,23 @@ curl -fsSL <span class="s">https://&lt;your-loom-host&gt;/install.sh</span> | sh
     <div class="bk-olds" data-stagger aria-hidden="true"><div class="bk-old" style="left:112px;--o:0.50"><span><svg viewBox="0 0 22 22" fill="none"><ellipse cx="11" cy="5.5" rx="7" ry="2.5" stroke="currentColor" stroke-width="1.4"/><path d="M4 5.5v11c0 1.4 3.1 2.5 7 2.5s7-1.1 7-2.5v-11M4 11c0 1.4 3.1 2.5 7 2.5s7-1.1 7-2.5" stroke="currentColor" stroke-width="1.4"/></svg></span>Day 1<small>snapshot</small></div><div class="bk-old" style="left:284px;--o:0.59"><span><svg viewBox="0 0 22 22" fill="none"><ellipse cx="11" cy="5.5" rx="7" ry="2.5" stroke="currentColor" stroke-width="1.4"/><path d="M4 5.5v11c0 1.4 3.1 2.5 7 2.5s7-1.1 7-2.5v-11M4 11c0 1.4 3.1 2.5 7 2.5s7-1.1 7-2.5" stroke="currentColor" stroke-width="1.4"/></svg></span>Day 2<small>snapshot</small></div><div class="bk-old" style="left:456px;--o:0.68"><span><svg viewBox="0 0 22 22" fill="none"><ellipse cx="11" cy="5.5" rx="7" ry="2.5" stroke="currentColor" stroke-width="1.4"/><path d="M4 5.5v11c0 1.4 3.1 2.5 7 2.5s7-1.1 7-2.5v-11M4 11c0 1.4 3.1 2.5 7 2.5s7-1.1 7-2.5" stroke="currentColor" stroke-width="1.4"/></svg></span>Day 3<small>snapshot</small></div><div class="bk-old" style="left:628px;--o:0.77"><span><svg viewBox="0 0 22 22" fill="none"><ellipse cx="11" cy="5.5" rx="7" ry="2.5" stroke="currentColor" stroke-width="1.4"/><path d="M4 5.5v11c0 1.4 3.1 2.5 7 2.5s7-1.1 7-2.5v-11M4 11c0 1.4 3.1 2.5 7 2.5s7-1.1 7-2.5" stroke="currentColor" stroke-width="1.4"/></svg></span>Day 4<small>snapshot</small></div><div class="bk-old" style="left:800px;--o:0.86"><span><svg viewBox="0 0 22 22" fill="none"><ellipse cx="11" cy="5.5" rx="7" ry="2.5" stroke="currentColor" stroke-width="1.4"/><path d="M4 5.5v11c0 1.4 3.1 2.5 7 2.5s7-1.1 7-2.5v-11M4 11c0 1.4 3.1 2.5 7 2.5s7-1.1 7-2.5" stroke="currentColor" stroke-width="1.4"/></svg></span>Day 5<small>snapshot</small></div><div class="bk-old" style="left:972px;--o:0.95"><span><svg viewBox="0 0 22 22" fill="none"><ellipse cx="11" cy="5.5" rx="7" ry="2.5" stroke="currentColor" stroke-width="1.4"/><path d="M4 5.5v11c0 1.4 3.1 2.5 7 2.5s7-1.1 7-2.5v-11M4 11c0 1.4 3.1 2.5 7 2.5s7-1.1 7-2.5" stroke="currentColor" stroke-width="1.4"/></svg></span>Day 6<small>snapshot</small></div></div>
   </section>
 
+  <!-- 10 Closing -->
+  <section class="slide s-close bare-chrome" data-section="Thanks" aria-label="Closing: Loom is AI memory for teams of agents. Easy to use, self-updating, self-regulating. Works with Claude Code, Codex, Cursor and the Claude app.">
+    <div class="left" data-stagger>
+      <img class="logo-full" src="assets/deck-logo-full.png?v=1" alt="Loom AI">
+      <div>
+        <h2 class="title-lg" style="font-size:96px">AI memory for teams of agents</h2>
+        <p class="traits">Easy to use<i></i>Self-updating<i></i>Self-regulating</p>
+        <div class="works"><span>Works with</span><b>Claude Code</b><b>Codex</b><b>Cursor</b><b>Claude app</b></div>
+      </div>
+      <div class="contact">
+        <div><span>Code</span>github.com/versean/LoomAI</div>
+        <div><span>Thanks</span>Questions?</div>
+      </div>
+    </div>
+    <div class="right"><img src="assets/deck-mark.png?v=2" alt=""></div>
+  </section>
+
   <div class="chrome" aria-hidden="true">
     <span class="brand"><img src="assets/deck-mark.png?v=2" alt="">Loom AI</span>
     <span class="sec" id="chrome-sec"></span>
@@ -1052,7 +792,7 @@ curl -fsSL <span class="s">https://&lt;your-loom-host&gt;/install.sh</span> | sh
 </main>
 
 <div class="progress" id="progress" aria-hidden="true"></div>
-<div class="hint" id="hint"><kbd>←</kbd><kbd>→</kbd> to move · <kbd>F</kbd> full screen · <kbd>A</kbd> all layouts</div>
+<div class="hint" id="hint"><kbd>←</kbd><kbd>→</kbd> to move · <kbd>F</kbd> full screen</div>
 <p class="sr-only" id="live" role="status"></p>
 
 <script>
@@ -1239,11 +979,8 @@ curl -fsSL <span class="s">https://&lt;your-loom-host&gt;/install.sh</span> | sh
   var cur = -1;
   function pad(n) { return (n < 10 ? '0' : '') + n; }
 
-  /* Talk order from the script. Slides keep their own numbers (#9 is always slide 9);
-     the arrow keys walk this list. Press A to step through every layout instead. */
-  var SCRIPT = [1, 4, 15, 16, 17, 18, 19, 20, 21, 14];
-  var allMode = false;
-  function order() { return allMode ? slides.map(function (_, i) { return i + 1; }) : SCRIPT; }
+  /* The talk: slides 1-10 in order. */
+  function order() { return slides.map(function (_, i) { return i + 1; }); }
   function step(d) {
     var list = order(), n = cur + 1, pos = list.indexOf(n);
     if (pos === -1) { /* opened a slide outside the talk: jump to the nearest one in that direction */
@@ -1327,12 +1064,6 @@ curl -fsSL <span class="s">https://&lt;your-loom-host&gt;/install.sh</span> | sh
     else if (k === 'ArrowLeft' || k === 'ArrowUp' || k === 'PageUp') { e.preventDefault(); prev(); }
     else if (k === 'Home') { e.preventDefault(); go(order()[0] - 1, -1); }
     else if (k === 'End') { e.preventDefault(); var l = order(); go(l[l.length - 1] - 1, 1); }
-    else if (k === 'a' || k === 'A') {
-      allMode = !allMode;
-      hint.innerHTML = allMode ? 'Showing all 14 layouts · <kbd>A</kbd> back to the talk' : 'Talk order · <kbd>A</kbd> to see all layouts';
-      hint.classList.remove('gone'); clearTimeout(hint._t); hint._t = setTimeout(function () { hint.classList.add('gone'); }, 2500);
-      var c = cur; cur = -1; go(c, 1); return;
-    }
     else if (k === 'f' || k === 'F') {
       if (!document.fullscreenElement) document.documentElement.requestFullscreen && document.documentElement.requestFullscreen();
       else document.exitFullscreen && document.exitFullscreen();
@@ -1354,164 +1085,12 @@ curl -fsSL <span class="s">https://&lt;your-loom-host&gt;/install.sh</span> | sh
   window.addEventListener('hashchange', function () { var n = parseInt(location.hash.slice(1), 10); if (n) go(n - 1, n - 1 > cur ? 1 : -1); });
 
   var start = parseInt(location.hash.slice(1), 10);
-  go(start ? start - 1 : SCRIPT[0] - 1, 1);
+  go(start ? start - 1 : 0, 1);
   setTimeout(function () { hint.classList.add('gone'); }, 4000);
 })();
 </script>
 <script>
-/* ── Workflow figure (agents → gateways → Loom AI → project brain) ── */
-  (function () {
-    var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    var fig = document.getElementById('wf-fig'), svg = document.getElementById('wf-wires'), NS = 'http://www.w3.org/2000/svg';
-    var $ = function (id) { return document.getElementById('wf-' + id); };
-    var agents = [$('a0'), $('a1'), $('a2')], gates = [$('g0'), $('g1'), $('g2')], hub = $('hub'), db = $('db');
-    var secs = [$('s0'), $('s1'), $('s2'), $('s3')], cap = $('cap');
-    var NAMES = ['dan', 'sara', 'priya'], SEC = ['projects', 'convos', 'files', 'summaries'];
-    var paths = {};
-    var INK = '#e4e4e7', NO = '#f08a8a';
-  
-    function rect(el) { var f = fig.getBoundingClientRect(), r = el.getBoundingClientRect(); return { x: r.left - f.left + r.width / 2, t: r.top - f.top, b: r.bottom - f.top }; }
-    function tileOf(n) { return rect(n.querySelector('.wf-tile')); }
-    function under(n) { var s = n.querySelector(':scope > span'); return (s ? rect(s).b : tileOf(n).b) + 7; }
-    /* Smooth S-curve, ink style */
-    function curve(x1, y1, x2, y2) {
-      if (Math.abs(x1 - x2) < 1) return 'M' + x1 + ',' + y1 + ' L' + x2 + ',' + y2;
-      var my = (y1 + y2) / 2;
-      return 'M' + x1 + ',' + y1 + ' C' + x1 + ',' + my + ' ' + x2 + ',' + my + ' ' + x2 + ',' + y2;
-    }
-    function add(k, d) { var p = document.createElementNS(NS, 'path'); p.setAttribute('d', d); p.setAttribute('class', 'wf-wire'); svg.appendChild(p); paths[k] = p; }
-    function draw() {
-      var f = fig.getBoundingClientRect();
-      svg.setAttribute('viewBox', '0 0 ' + f.width + ' ' + f.height); svg.textContent = '';
-      var h = tileOf(hub), d = tileOf(db);
-      agents.forEach(function (a, i) {
-        var g = tileOf(gates[i]);
-        add('a' + i, 'M' + g.x + ',' + under(a) + ' L' + g.x + ',' + (g.t - 1));
-        add('g' + i, curve(g.x, g.b + 1, h.x + (i - 1) * 14, h.t));
-      });
-      var hb = under(hub) + 14;
-      var k = fig.offsetWidth / f.width || 1; /* undo any CSS scale (the deck scales the whole slide) */
-      cap.style.left = h.x * k + 'px'; cap.style.top = (under(hub) - 2) * k + 'px';
-      add('w', 'M' + (h.x - 7) + ',' + hb + ' L' + (h.x - 7) + ',' + d.t);
-      add('r', 'M' + (h.x + 7) + ',' + d.t + ' L' + (h.x + 7) + ',' + hb);
-      var db0 = under(db);
-      secs.forEach(function (s, j) { var r = tileOf(s); add('s' + j, curve(d.x, db0, r.x, r.t - 1)); });
-    }
-    draw();
-    window.addEventListener('resize', draw);
-    if (document.fonts && document.fonts.ready) document.fonts.ready.then(draw);
-    if (reduce) { $('pause').hidden = true; return; }
-  
-    var userPaused = false, offscreen = true, started = false;
-    var paused = true;
-    function syncPause() { paused = userPaused || offscreen; }
-    var SLOW = 1.6; /* raise to slow the whole figure down */
-    var TRAIN = [{ r: 2.1, o: 0.9 }, { r: 1.55, o: 0.4 }, { r: 1.15, o: 0.18 }], LAG = 0.08;
-    function ease(k) { return k < 0.5 ? 2 * k * k : 1 - Math.pow(-2 * k + 2, 2) / 2; }
-    function pulse(k, color, reverse, dur) {
-      return new Promise(function (done) {
-        var base = paths[k], L = base.getTotalLength();
-        dur *= SLOW;
-        base.classList.add('hot');
-        var g = document.createElementNS(NS, 'g'); g.setAttribute('class', 'wf-pulse'); g.setAttribute('data-k', k); g.setAttribute('data-c', color === NO ? 'deny' : (reverse || k === 'r') ? 'back' : 'req');
-        var dots = TRAIN.map(function (d) {
-          var c = document.createElementNS(NS, 'circle'); c.setAttribute('r', d.r); c.setAttribute('fill', color); c.setAttribute('opacity', 0);
-          g.appendChild(c); return { el: c, o: d.o };
-        });
-        svg.appendChild(g);
-        var t = 0, last = null, end = 1 + LAG * (TRAIN.length - 1);
-        (function step(now) {
-          if (last !== null && !paused) t += now - last; last = now;
-          var k2 = t / dur;
-          dots.forEach(function (d, j) {
-            var q = k2 - j * LAG;
-            if (q <= 0 || q >= 1) { d.el.setAttribute('opacity', 0); return; }
-            var pt = base.getPointAtLength((reverse ? 1 - ease(q) : ease(q)) * L);
-            d.el.setAttribute('cx', pt.x); d.el.setAttribute('cy', pt.y); d.el.setAttribute('opacity', d.o);
-          });
-          if (k2 < end) requestAnimationFrame(step);
-          else { g.remove(); if (!svg.querySelector('g.wf-pulse[data-k="' + k + '"]')) base.classList.remove('hot'); done(); }
-        })(performance.now());
-      });
-    }
-    function sleep(ms) { return new Promise(function (r) { var left = ms * SLOW; (function tick() { if (!paused) left -= 50; if (left <= 0) r(); else setTimeout(tick, 50); })(); }); }
-    function mark(el, cls, ms) {
-      el._m = el._m || {}; el._m[cls] = (el._m[cls] || 0) + 1; el.classList.add(cls);
-      setTimeout(function () { if (--el._m[cls] <= 0) el.classList.remove(cls); }, ms * SLOW);
-    }
-    function say() { /* caption is just "processing", shown while the hub is busy */ }
-    function tag() { /* labels stay as "Name (Tool)" */ }
-  
-    var SUMMARIES = 3, CONVOS = 1, FILES = 2;
-    async function denied(i) {
-      tag(i, 'push'); mark(agents[i], 'on', 600);
-      await pulse('a' + i, INK, false, 450);
-      mark(gates[i], 'deny', 1100); say('gateway · denied ' + NAMES[i]);
-      await sleep(220);
-      await pulse('a' + i, NO, true, 450);
-      mark(agents[i], 'deny', 900);
-      await sleep(400); tag(i);
-    }
-    /* Push: write-only. Always summaries + convos, sometimes files. Nothing returns. */
-    async function push(i, withFiles) {
-      tag(i, 'push'); mark(agents[i], 'on', 600);
-      await pulse('a' + i, INK, false, 450);
-      mark(gates[i], 'pass', 650);
-      await pulse('g' + i, INK, false, 600);
-      mark(hub, 'on', 900);
-      var targets = withFiles ? [SUMMARIES, CONVOS, FILES] : [SUMMARIES, CONVOS];
-      say('writing · ' + targets.map(function (s) { return SEC[s]; }).join(' + '));
-      await pulse('w', INK, false, 380);
-      mark(db, 'on', 1100);
-      await Promise.all(targets.map(function (s) {
-        return pulse('s' + s, INK, false, 480).then(function () { mark(secs[s], 'on', 1100); });
-      }));
-      await sleep(350); tag(i);
-    }
-    /* Pull: read one section, answer travels all the way back up */
-    async function pull(i, s) {
-      tag(i, 'pull'); mark(agents[i], 'on', 600);
-      await pulse('a' + i, INK, false, 450);
-      mark(gates[i], 'pass', 650);
-      await pulse('g' + i, INK, false, 600);
-      mark(hub, 'on', 2000); say('reading · ' + SEC[s] + ' → ' + NAMES[i]);
-      await pulse('w', INK, false, 380);
-      mark(db, 'on', 1300);
-      await pulse('s' + s, INK, false, 420);
-      mark(secs[s], 'on', 900);
-      await sleep(160);
-      await pulse('s' + s, INK, true, 420);
-      await pulse('r', INK, false, 380);
-      await pulse('g' + i, INK, true, 600);
-      mark(gates[i], 'pass', 450);
-      await pulse('a' + i, INK, true, 450);
-      mark(agents[i], 'on', 700);
-      tag(i);
-    }
-  
-    function rand(a, b) { return a + Math.random() * (b - a); }
-    function pick(list) { return list[Math.floor(Math.random() * list.length)]; }
-    function agentLoop(i, startDelay, script) {
-      (async function () { await sleep(startDelay); for (var n = 0; ; n++) { await script(n); await sleep(rand(150, 650)); } })();
-    }
-    function start() {
-      agentLoop(0, 500, function (n) { return n % 3 === 1 ? denied(0) : push(0, Math.random() < 0.35); });
-      agentLoop(1, 0, function (n) { return n % 3 === 2 ? push(1, false) : pull(1, pick([SUMMARIES, FILES, 0])); });
-      agentLoop(2, 1100, function (n) { return n % 3 === 1 ? pull(2, pick([CONVOS, SUMMARIES])) : push(2, Math.random() < 0.5); });
-    }
-    new IntersectionObserver(function (es) {
-      offscreen = !es[0].isIntersecting; syncPause();
-      if (!offscreen && !started) { started = true; start(); }
-    }, { threshold: 0.25 }).observe(fig);
-  
-    var pb = $('pause');
-    pb.addEventListener('click', function () {
-      userPaused = !userPaused; syncPause();
-      pb.setAttribute('aria-pressed', String(userPaused));
-      pb.setAttribute('aria-label', userPaused ? 'Play animation' : 'Pause animation');
-      pb.querySelector('svg').innerHTML = userPaused ? '<path d="M3.5 2.2 9.5 6l-6 3.8Z" fill="currentColor"/>' : '<path d="M3.5 2.5v7M8.5 2.5v7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>';
-    });
-  })();
+
 </script>
 </body>
 </html>
